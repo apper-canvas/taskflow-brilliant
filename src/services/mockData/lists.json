@@ -1,0 +1,30 @@
+[
+  {
+    "Id": 1,
+    "name": "Personal",
+    "color": "#6366f1",
+    "order": 1,
+    "createdAt": "2024-01-01T12:00:00.000Z"
+  },
+  {
+    "Id": 2,
+    "name": "Work",
+    "color": "#8b5cf6",
+    "order": 2,
+    "createdAt": "2024-01-01T12:05:00.000Z"
+  },
+  {
+    "Id": 3,
+    "name": "Health & Fitness",
+    "color": "#10b981",
+    "order": 3,
+    "createdAt": "2024-01-05T09:30:00.000Z"
+  },
+  {
+    "Id": 4,
+    "name": "Learning",
+    "color": "#f59e0b",
+    "order": 4,
+    "createdAt": "2024-01-07T15:20:00.000Z"
+  }
+]

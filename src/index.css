@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* React Toastify Styles */
+@import 'react-toastify/dist/ReactToastify.css';
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f8fafc;
+  }
+
+  input, textarea, button, select {
+    font-family: inherit;
+  }
+}
+
+/* Toast Overrides */
+.Toastify__toast-container {
+  top: 1rem;
+  right: 1rem;
+  width: 320px;
+}
+
+.Toastify__toast {
+  border-radius: 0.5rem;
+  font-family: 'Inter', sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.Toastify__toast--success {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.Toastify__toast--error {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+}
+
+.Toastify__toast--info {
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+}
+
+.Toastify__toast--warning {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #94a3b8;
+}
+
+/* Priority indicators */
+.priority-high {
+  @apply bg-gradient-to-r from-pink-500 to-rose-500;
+}
+
+.priority-medium {
+  @apply bg-gradient-to-r from-purple-500 to-indigo-500;
+}
+
+.priority-low {
+  @apply bg-gradient-to-r from-blue-500 to-cyan-500;
+}
+
+/* Checkbox animation */
+.checkbox-checked {
+  animation: checkboxScale 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes checkboxScale {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Task completion animation */
+.task-completing {
+  transition: opacity 0.3s ease-out, transform 0.5s ease-out 0.2s;
+}
+
+.task-completing.fade-out {
+  opacity: 0.6;
+  transform: translateY(-10px);
+}
+
+/* Calendar styles */
+.react-calendar {
+  width: 100%;
+  max-width: 100%;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.125em;
+}
+
+.react-calendar button {
+  margin: 0;
+  border: 0;
+  outline: none;
+  background: none;
+}
+
+.react-calendar button:enabled:hover,
+.react-calendar button:enabled:focus {
+  background-color: #f1f5f9;
+}
+
+.react-calendar__tile--active {
+  background: #6366f1 !important;
+  color: white;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: #4f46e5 !important;
+}

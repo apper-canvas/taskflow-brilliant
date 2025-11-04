@@ -1,0 +1,98 @@
+[
+  {
+    "Id": 1,
+    "title": "Review quarterly budget report",
+    "description": "Analyze Q3 expenses and prepare recommendations for Q4 budget adjustments",
+    "priority": "high",
+    "dueDate": "2024-01-15T09:00:00.000Z",
+    "completed": false,
+    "listId": 2,
+    "order": 1,
+    "createdAt": "2024-01-10T08:30:00.000Z",
+    "completedAt": null
+  },
+  {
+    "Id": 2,
+    "title": "Schedule dentist appointment",
+    "description": "Annual checkup and cleaning - prefer morning slot",
+    "priority": "medium",
+    "dueDate": "2024-01-16T10:00:00.000Z",
+    "completed": false,
+    "listId": 1,
+    "order": 2,
+    "createdAt": "2024-01-10T14:15:00.000Z",
+    "completedAt": null
+  },
+  {
+    "Id": 3,
+    "title": "Prepare presentation for client meeting",
+    "description": "Create slides for new project proposal including timeline, budget, and deliverables",
+    "priority": "high",
+    "dueDate": "2024-01-14T15:30:00.000Z",
+    "completed": true,
+    "listId": 2,
+    "order": 3,
+    "createdAt": "2024-01-08T11:20:00.000Z",
+    "completedAt": "2024-01-14T14:45:00.000Z"
+  },
+  {
+    "Id": 4,
+    "title": "Buy groceries for weekend",
+    "description": "Milk, bread, eggs, vegetables, and ingredients for Sunday dinner",
+    "priority": "low",
+    "dueDate": null,
+    "completed": false,
+    "listId": 1,
+    "order": 4,
+    "createdAt": "2024-01-11T16:45:00.000Z",
+    "completedAt": null
+  },
+  {
+    "Id": 5,
+    "title": "Update team on project status",
+    "description": "Send weekly status email with completed tasks, blockers, and next steps",
+    "priority": "medium",
+    "dueDate": "2024-01-17T17:00:00.000Z",
+    "completed": false,
+    "listId": 2,
+    "order": 5,
+    "createdAt": "2024-01-11T09:15:00.000Z",
+    "completedAt": null
+  },
+  {
+    "Id": 6,
+    "title": "Call mom",
+    "description": "Weekly check-in call",
+    "priority": "",
+    "dueDate": "2024-01-15T19:00:00.000Z",
+    "completed": false,
+    "listId": 1,
+    "order": 6,
+    "createdAt": "2024-01-11T18:30:00.000Z",
+    "completedAt": null
+  },
+  {
+    "Id": 7,
+    "title": "Research new project management tools",
+    "description": "Compare features, pricing, and integration options for team productivity",
+    "priority": "low",
+    "dueDate": "2024-01-20T12:00:00.000Z",
+    "completed": false,
+    "listId": 2,
+    "order": 7,
+    "createdAt": "2024-01-09T13:22:00.000Z",
+    "completedAt": null
+  },
+  {
+    "Id": 8,
+    "title": "Plan weekend hiking trip",
+    "description": "Check weather, pack supplies, and confirm meeting point with friends",
+    "priority": "medium",
+    "dueDate": "2024-01-18T08:00:00.000Z",
+    "completed": false,
+    "listId": 1,
+    "order": 8,
+    "createdAt": "2024-01-10T20:10:00.000Z",
+    "completedAt": null
+  }
+]
