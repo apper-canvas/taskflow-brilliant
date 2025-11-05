@@ -70,30 +70,20 @@ const Header = ({
         </motion.button>
       )}
 
-      <Button onClick={() => {
-        const data = [
-          {
-            "success": false,
-            "message": "Failed to create 1 records: Error: You don't have permission to perform create operation."
+<Button 
+        onClick={async () => {
+          try {
+            const { logout } = await import("@/layouts/Root").then(m => ({ logout: null }))
+            // Get logout from AuthContext via useAuth hook
+            window.location.href = "/login"
+          } catch (error) {
+            console.error("Logout failed:", error)
           }
-        ]
-
-        console.error(data)
-      }}>Permission</Button>
-      <Button onClick={() => {
-        const data = [
-          {
-            "success": false,
-            "message": "Public profile not enabled for this app"
-          }
-        ]
-
-        console.error(data)
-      }}>Public Profile</Button>
-      <Button onClick={() => {
-        let abcd = {};
-        console.error(abcd.length());
-      }}>Error</Button>
+        }}
+        className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-md transition-colors"
+      >
+        Logout
+      </Button>
     </motion.header>
   )
 }

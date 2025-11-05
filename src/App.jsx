@@ -1,10 +1,8 @@
 import { RouterProvider } from "react-router-dom"
 import { ToastContainer } from "react-toastify"
 import { router } from "@/router"
-import { initializeStorage } from "@/utils/localStorage"
+import "react-toastify/dist/ReactToastify.css"
 
-// Initialize localStorage with default data
-initializeStorage()
 
 function App() {
   return (
