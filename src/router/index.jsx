@@ -52,7 +52,7 @@ const createRoute = ({
 
   const route = {
     ...(index ? { index: true } : { path }),
-    element: element ? <Suspense fallback={<LoadingFallback />}>{element}</Suspense> : element,
+    element: element ? <Suspense fallback={<LoadingFallback />}>{element}</Suspense> : null,
     handle: {
       access: finalAccess,
       ...meta,
