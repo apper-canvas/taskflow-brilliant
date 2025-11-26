@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import React, { Suspense, lazy } from "react";
+import React, { Suspense, lazy, useEffect } from "react";
 import { getRouteConfig } from "./route.utils";
 import Root from "@/layouts/Root";
 import Layout from "@/components/organisms/Layout";
@@ -30,6 +30,13 @@ const LoadingFallback = () => (
   </div>
 )
 
+const ErrorHandler = ({ configPath }) => {
+  useEffect(() => {
+    console.error('Error at:', window.location.pathname, configPath);
+  }, []);
+  return <div>Error</div>;
+};
+
 // Create route helper function
 const createRoute = ({
   path,
@@ -52,7 +59,8 @@ const createRoute = ({
 
   const route = {
     ...(index ? { index: true } : { path }),
-    element: element ? <Suspense fallback={<LoadingFallback />}>{element}</Suspense> : null,
+    element: element ? <Suspense fallback={<LoadingFallback />}>{element}</Suspense> : element,
+    errorElement: <ErrorHandler configPath={configPath} />,
     handle: {
       access: finalAccess,
       ...meta,
